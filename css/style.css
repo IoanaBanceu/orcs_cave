@@ -5,6 +5,10 @@
 }
 
 /************************ Generals ************************/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Charm', cursive;
     font-weight: 400;
@@ -13,15 +17,13 @@ body {
 }
 .homepage {
     
-    /* background-color: #000; */
-    background-image: url('../images/map.jpg');
+    background-image: url('../images/pattern.jpg');
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
     z-index: 0;
-
 }
 
 body::before {
@@ -32,7 +34,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .8;
+    opacity: .9;
     z-index: -1;
   }
 
@@ -81,11 +83,11 @@ h3 {
 }
 
 .links li a:hover {
-    color: lightgray;
+    color: #ff0000;
 }
 
 .links li a.active {
-    color: red;
+    color: #ff0000;
 }
 
 
@@ -97,6 +99,8 @@ header {
     left: 0;
     right: 0;
     z-index: 2;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(15px);
 }
 
 .navbar {
@@ -133,7 +137,7 @@ header {
     display: none;
     position: absolute;
     right: 2em;
-    top: 60px;
+    top: 70px;
     width: 300px;
     height: 0;
     background: rgba(255, 255, 255, .1);
@@ -158,7 +162,6 @@ header {
 .dropdown-menu li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1em;
 }
 
 /************************ Banner ************************/
@@ -206,6 +209,7 @@ header {
     font-weight: 700;
     color: #fff;
     line-height: .8;
+    transform: scale(1.5);
 }
 
 .inner-banner .title span {
@@ -258,15 +262,13 @@ header {
 /************************ Schools ************************/
 .schools {
     padding: 6em 0;
+    position: relative;
 }
 
-.schools .separation {
-    bottom: 0;
-}
 
 .schools .title {
     position: relative;
-    margin-bottom: 4em;
+    margin-bottom: 6em;
 }
 
 
@@ -284,8 +286,9 @@ header {
 
 .single-school {
     width: calc(50% - 1.5em);
-    background: #000;
+    background: rgba(136, 150, 148, 0.181);
     padding: 2em;
+    border-radius: 10px;
 }
 
 .single-school p {
@@ -307,9 +310,85 @@ header {
     font-size: 1.7em;
 }
 
+.schools .separation {
+    bottom: 0;
+}
+
 /************************ Main Characters ************************/
 .main-characters {
     padding: 6em 0;
+}
+
+.main-characters .separation {
+    bottom: 0;
+}
+
+.main-characters .title {
+    margin-bottom: 6em;
+}
+
+.inner-characters {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2em;
+    position: relative;
+}
+
+.character-box {
+    text-decoration: none;
+    width: calc(25% - 2em);
+    transition: all .5s ease-in;
+}
+
+
+.character-box:hover h3{
+    color: #ff0000;
+}
+
+.character-box .picture {
+    background: rgba(136, 150, 148, 0.181);
+    padding: 2em;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+.character-box:hover .picture {
+    background: rgba(0,0,0, .3);
+}
+
+.characters-text {
+    margin-bottom: 2em;
+}
+
+/************************ Footer ************************/
+footer {
+    background: #000;
+    padding: 6em 0;
+}
+
+.inner-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2em;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: all .5s ease-in;
+}
+
+.footer-links li a:hover {
+    color: #ff0000;
 }
 /************************ Media Query ************************/
 @media screen and (max-width: 992px) {
@@ -324,17 +403,72 @@ header {
     .dropdown-menu {
         display: block;
     }
+
+    .dropdown-menu li a{
+        font-size: 1.1em;
+    }
+
+    .dropdown-menu li:last-child {
+        padding-bottom: 0;
+    }
+
+    .school-desc h3, .school-desc h3 span {
+        font-size: 1.5em;
+    }
+
+    .single-school p {
+        font-size: 1.2em;
+    }
+
+    .characters-text h3 {
+        font-size: 1.5em;
+    }
+
+
 }
 
 @media screen and (max-width: 768px) {
     .single-school {
         width: 100%;
     }
+
+    .character-box {
+        width: calc(50% - 1em);
+    }
+
+   
 }
 
 @media screen and (max-width: 576px) {
     .dropdown-menu {
         left: 2em;
         width: unset;
+    }
+
+    .school-desc h3, .school-desc h3 span {
+        font-size: 1.3em;
+    }
+
+    .school-desc {
+        gap: 1em;
+    }
+
+    .character-box {
+        width: 100%;
+    }
+
+    .inner-footer {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 2em;
+    }
+
+    .main-characters img {
+        width: unset;
+        margin: 0 auto;
+        height: 400px;
     }
 }
