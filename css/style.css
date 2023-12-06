@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+.homepage {
     font-family: 'Charm', cursive;
     font-weight: 400;
     font-size: 14px;
@@ -24,7 +24,7 @@ body {
 }
 
 
-body::before {
+.homepage::before {
     background-color: #000;
     position: absolute;
     content: '';
