@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Orcs Cave</title>
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,295 +23,509 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body class="homepage">
     <!-- 1. Menu  -->
     <header>
-      <div class="navbar">
-        <div class="logo"><a href="#">ORCS CAVE</a></div>
-        <ul class="links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="characters.html">Characters</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="toggle-btn" onclick="openMenu()">
-          <i class="fa-solid fa-bars"></i>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo"><a href="#">ORCS CAVE</a></div>
+          <ul class="links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="toggle-btn" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
-      </div>
-      <p></p>
 
-      <div class="dropdown-menu">
-        <ul class="links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="characters.html">Characters</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="dropdown-menu">
+          <ul class="links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
-    <!-- 2. Benner  -->
-    <section class="banner">
+    <!-- 2. Banner  -->
+    <div class="banner">
       <div class="container">
-        <div class="inner-banner">
-          <div class="title">
-            <span>The</span>
-            Witcher
-            <span>
+        <div class="banner-inner">
+          <div class="banner-left">
+            <div class="subtitle">The</div>
+            <div class="title">Witcher</div>
+            <div class="subtitle">
               Wild
               <img
                 src="./images/wild-hunt-witcher-symbol-red.png"
-                alt="wild hunt sign"
+                class="symbol"
+                alt="witcher symbol red"
               />
               Hunt
-            </span>
+            </div>
+          </div>
+          <div class="banner-right">
+            <img src="./images/characters/geralt.png" alt="geralt" />
           </div>
         </div>
       </div>
-      <div class="separation">
-        <a href="#schools">
-          <img src="./images/axii.png" alt="axii symbol" />
-        </a>
-      </div>
-    </section>
 
-    <!--3. Schools  -->
-    <section class="schools" id="schools">
+      <div class="bottom-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 3. Schools  -->
+    <div class="schools">
       <div class="container">
-        <div class="title">
-          <h2>Witcher Schools</h2>
-          <div class="divider"></div>
+        <div class="schools-title">
+          <h2>Main Schools</h2>
+          <div class="schools-icon">
+            <div class="circle">
+              <img src="./images/symbols/aard.png" class="icon" alt="aard" />
+            </div>
+          </div>
         </div>
 
-        <div class="inner-schools">
-          <div class="single-school">
-            <div class="school-desc">
+        <div class="school-inner">
+          <!-- Card 1  -->
+          <div class="school-card">
+            <div class="school-symbol">
               <img
+                class="picture"
                 src="./images/schools/wolf_school_medallion.png"
-                alt="wolf school medallion"
+                alt="School of the Wolf"
               />
-
-              <h3>
-                <span>01.</span><br />
-                School of the Wolf
-              </h3>
             </div>
-            <p>
-              The Order of Witchers had almost completely splintered, only a
-              small group of witchers remained in its keep after the third group
-              of witchers had left to build their own school. These last
-              witchers left Morgraig and travelled east. They decided to settle
-              in the north in the caves of the Morhen Valley.
-            </p>
-            <p>
-              In the 11th century the construction of Kaer Morhen was finished,
-              and because its original builders apparently abandoned the keep or
-              vanished in some other way, the Wolves settled there.
-            </p>
+            <div class="school-details">
+              <h3><span>1:</span> School of the Wolf</h3>
+              <p>
+                The Order of Witchers had almost completely splintered, only a
+                small group of witchers remained in its keep after the third
+                group of witchers had left to build their own school. These last
+                witchers left Morgraig and travelled east. They decided to
+                settle in the north in the caves of the Morhen Valley.
+              </p>
+              <p>
+                In the 11th century the construction of Kaer Morhen was
+                finished, and because its original builders apparently abandoned
+                the keep or vanished in some other way, the Wolves settled
+                there.
+              </p>
+            </div>
           </div>
-
-          <div class="single-school">
-            <div class="school-desc">
+          <!-- Card 2  -->
+          <div class="school-card">
+            <div class="school-symbol">
               <img
+                class="picture"
                 src="./images/schools/cat_school_medallion.png"
-                alt="cat school medallion"
+                alt="School of the Cat"
               />
-
-              <h3>
-                <span>02.</span><br />
-                School of the Cat
-              </h3>
             </div>
-            <p>
-              School of the Cat is a school of ragtag witchers formed after a
-              student mutiny against their former masters. Headquartered in the
-              traveling Dyn Marv Caravan, they are apparently one of the few
-              schools training women and non-pureblood humans.
-            </p>
-            <p>
-              Cat students hone their balance by walking a tightrope
-              blindfolded. Failure is easy to shrug off at first, but throughout
-              their training, the walk gets higher and the danger increases.
-            </p>
+            <div class="school-details">
+              <h3><span>2:</span> School of the Cat</h3>
+              <p>
+                The Order of Witchers had almost completely splintered, only a
+                small group of witchers remained in its keep after the third
+                group of witchers had left to build their own school. These last
+                witchers left Morgraig and travelled east. They decided to
+                settle in the north in the caves of the Morhen Valley.
+              </p>
+              <p>
+                In the 11th century the construction of Kaer Morhen was
+                finished, and because its original builders apparently abandoned
+                the keep or vanished in some other way, the Wolves settled
+                there.
+              </p>
+            </div>
           </div>
-
-          <div class="single-school">
-            <div class="school-desc">
+          <!-- Card 3  -->
+          <div class="school-card">
+            <div class="school-symbol">
               <img
+                class="picture"
                 src="./images/schools/griffin_school-medalion.png"
-                alt="griffin school medallion"
+                alt="School of the Griffin"
               />
-
-              <h3>
-                <span>03.</span><br />
-                School of the Griffin
-              </h3>
             </div>
-            <p>
-              School of the Griffin, sometimes referred to as School of the
-              Eagle or Gryphon School, is a school of witchers headquartered in
-              Kovir and Poviss, in Kaer Seren located at the sea end of a
-              mountain range. Leo Bonhart had reportedly slain at least one of
-              its members.
-            </p>
-            <p>
-              Students are offered two choices to complete their final trial.
-              They either locate and retrieve a griffin's egg, or recite the
-              entirety of Liber Tenebrarum verbatim. However, none have ever
-              chosen the latter.
-            </p>
+            <div class="school-details">
+              <h3><span>3:</span> School of the Griffin</h3>
+              <p>
+                The Order of Witchers had almost completely splintered, only a
+                small group of witchers remained in its keep after the third
+                group of witchers had left to build their own school. These last
+                witchers left Morgraig and travelled east. They decided to
+                settle in the north in the caves of the Morhen Valley.
+              </p>
+              <p>
+                In the 11th century the construction of Kaer Morhen was
+                finished, and because its original builders apparently abandoned
+                the keep or vanished in some other way, the Wolves settled
+                there.
+              </p>
+            </div>
           </div>
-
-          <div class="single-school">
-            <div class="school-desc">
+          <!-- Card 4  -->
+          <div class="school-card">
+            <div class="school-symbol">
               <img
+                class="picture"
                 src="./images/schools/bear_school_medallion.png"
-                alt="bear school medallion"
+                alt="School of the Bear"
               />
-
-              <h3>
-                <span>04.</span><br />
-                School of the Bear
-              </h3>
             </div>
-            <p>
-              The School of the Bear was a school of witchers headquartered in
-              Haern Caduch keep in Amell, reportedly in the Slopes.
-            </p>
-            <p>
-              Students must pass the trial of the mountain. This requires
-              venturing to the peak of Mount Gorgon to retrieve a special
-              runestone as proof of ascent. It was an especially brutal
-              challenge as many boys freeze to death long before they find the
-              summit.
-            </p>
+            <div class="school-details">
+              <h3><span>4:</span> School of the Bear</h3>
+              <p>
+                The Order of Witchers had almost completely splintered, only a
+                small group of witchers remained in its keep after the third
+                group of witchers had left to build their own school. These last
+                witchers left Morgraig and travelled east. They decided to
+                settle in the north in the caves of the Morhen Valley.
+              </p>
+              <p>
+                In the 11th century the construction of Kaer Morhen was
+                finished, and because its original builders apparently abandoned
+                the keep or vanished in some other way, the Wolves settled
+                there.
+              </p>
+            </div>
           </div>
-
-          <div class="single-school">
-            <div class="school-desc">
+          <!-- Card 5  -->
+          <div class="school-card">
+            <div class="school-symbol">
               <img
+                class="picture"
                 src="./images/schools/viper_school_medallion.png"
-                alt="viper school medallion"
+                alt="School of the Viper"
               />
-
-              <h3>
-                <span>05.</span><br />
-                School of the Viper
-              </h3>
             </div>
-            <p>
-              The School of the Viper was a school of witchers headquartered in
-              Gorthur Gvaed, a keep somewhere in the deep chasms of Tir Tochair
-              mountains.
-            </p>
-            <p>
-              Each student is given a pet to raise during their stay at the
-              keep, they would form a strong emotional bond through their
-              training. Years later, before becoming a fully-fledged witcher,
-              they are ordered to slaughter their animal.
-            </p>
+            <div class="school-details">
+              <h3><span>5:</span> School of the Viper</h3>
+              <p>
+                The Order of Witchers had almost completely splintered, only a
+                small group of witchers remained in its keep after the third
+                group of witchers had left to build their own school. These last
+                witchers left Morgraig and travelled east. They decided to
+                settle in the north in the caves of the Morhen Valley.
+              </p>
+              <p>
+                In the 11th century the construction of Kaer Morhen was
+                finished, and because its original builders apparently abandoned
+                the keep or vanished in some other way, the Wolves settled
+                there.
+              </p>
+            </div>
           </div>
-
-          <div class="single-school">
-            <div class="school-desc">
+          <!-- Card 6  -->
+          <div class="school-card">
+            <div class="school-symbol">
               <img
+                class="picture"
                 src="./images/schools/manticore-school_medalion.png"
-                alt="viper school medallion"
+                alt="School of the Manticore"
               />
-
-              <h3>
-                <span>06.</span><br />
-                School of the Manticore
-              </h3>
             </div>
-            <p>
-              The School of the Manticore, or Alqatil (Zerrikanian: Slayers), is
-              a witcher school that was headquartered in the far east, on the
-              edges of the Korath desert. They rarely venture on the other side
-              of the Continent, and thus remain mostly an enigma to Nordlings.
-            </p>
+            <div class="school-details">
+              <h3><span>6:</span> School of the Manticore</h3>
+              <p>
+                The Order of Witchers had almost completely splintered, only a
+                small group of witchers remained in its keep after the third
+                group of witchers had left to build their own school. These last
+                witchers left Morgraig and travelled east. They decided to
+                settle in the north in the caves of the Morhen Valley.
+              </p>
+              <p>
+                In the 11th century the construction of Kaer Morhen was
+                finished, and because its original builders apparently abandoned
+                the keep or vanished in some other way, the Wolves settled
+                there.
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="separation">
-        <a href="#characters">
-          <img src="./images/axii.png" alt="axii symbol" />
-        </a>
-      </div>
-    </section>
-
-    <!--4. Main Characters  -->
-    <div class="main-characters" id="characters">
-      <div class="container">
-        <div class="title">
-          <h2>Main Characters</h2>
-          <div class="divider"></div>
-        </div>
-
-        <div class="inner-characters">
-          <a href="characters.html#geralt" class="character-box">
-            <div class="characters-text">
-              <h3>Geralt of Rivia</h3>
-            </div>
-            <div class="picture">
-              <img src="./images/geralt.png" alt="" />
-            </div>
-          </a>
-
-          <a href="characters.html#yennefer" class="character-box">
-            <div class="characters-text">
-              <h3>Yennefer of Vengerberg</h3>
-            </div>
-            <div class="picture">
-              <img src="./images/yennefer.png" alt="" />
-            </div>
-          </a>
-
-          <a href="characters.html#ciri" class="character-box">
-            <div class="characters-text">
-              <h3>Ciri of Cintra</h3>
-            </div>
-            <div class="picture">
-              <img src="./images/cirilla.png" alt="" />
-            </div>
-          </a>
-
-          <a href="#" class="character-box">
-            <div class="characters-text">
-              <h3>Dandelion</h3>
-            </div>
-            <div class="picture">
-              <img src="./images/dandelion.png" alt="" />
-            </div>
-          </a>
         </div>
       </div>
     </div>
 
-    <!--5. Footer  -->
-    <footer>
+    <!-- 4. Main Characters  -->
+    <div class="main-chars">
+      <div class="top-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,320L48,314.7C96,309,192,299,288,256C384,213,480,139,576,112C672,85,768,107,864,96C960,85,1056,43,1152,64C1248,85,1344,171,1392,213.3L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
       <div class="container">
-        <div class="inner-footer">
-          <div class="footer-left">
-            <h3>Thank You!</h3>
-            <p>&copy; Copyright 2023, ORCS CAVE</p>
+        <div class="main-chars-title">
+          <h2>Main Characters</h2>
+          <div class="schools-icon">
+            <div class="circle">
+              <img src="./images/symbols/quen.png" class="icon" alt="quen" />
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-chars">
+          <!-- Card 1  -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="/images/characters/geralt.png"
+                  alt="Geralt of Rivia"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Geralt of Rivia</h1>
+                <p>
+                  <span><i class="fa-solid fa-quote-left"></i></span>...if I'm
+                  to choose between one evil and another, then I prefer not to
+                  choose at all.
+                  <span><i class="fa-solid fa-quote-right"></i></span>
+                </p>
+                <a href="characters.html#geralt">Read More...</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2  -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="/images/characters/yennefer.png"
+                  alt="Yennefer of Vengerberg"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Yennefer of Vengerberg</h1>
+                <p>
+                  <span><i class="fa-solid fa-quote-left"></i></span> When I
+                  created Yennefer's character I wanted Geralt to fully grow,
+                  but then I decided to make things complicated. I created a
+                  female character who refuses to be a fantasy stereotype. To
+                  please the reader.
+                  <span><i class="fa-solid fa-quote-right"></i></span>
+                </p>
+                <a href="characters.html#yennefer">Read More...</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3  -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="/images/characters/cirilla.png"
+                  alt="Ciri of Cintra"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Ciri of Cintra</h1>
+                <p>
+                  <span><i class="fa-solid fa-quote-left"></i></span>Hatred and
+                  vengeance blinded me ... But I shall stand before them in
+                  humility. I shall remember the expression in their eyes. I
+                  hope the memory of those eyes will stop me making a similar
+                  mistake.
+                  <span><i class="fa-solid fa-quote-right"></i></span>
+                </p>
+                <a href="characters.html#ciri">Read More...</a>
+              </div>
+            </div>
           </div>
 
-          <div class="footer-right">
-            <ul class="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="characters.html">Characters</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <!-- Card 4  -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/characters/emhyr.png" alt="Emhyr" />
+              </div>
+              <div class="flip-card-back">
+                <h1>Emhyr</h1>
+                <p>
+                  <span><i class="fa-solid fa-quote-left"></i></span>The North
+                  shall tuck tail and beg for mercy. That is its destiny.
+                  <span><i class="fa-solid fa-quote-right"></i></span>
+                </p>
+                <a href="characters.html#emhyr">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5  -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/characters/dandelion.png" alt="Dandelion" />
+              </div>
+              <div class="flip-card-back">
+                <h1>Dandelion</h1>
+                <p>
+                  <span><i class="fa-solid fa-quote-left"></i></span>Did you
+                  know I caught an arrow with my own hand, It's the truth I
+                  swear!
+                  <span><i class="fa-solid fa-quote-right"></i></span>
+                </p>
+                <a href="characters.html#dandelion">Read More...</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="bottom-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 4. Symbols  -->
+    <div class="symbols">
+      <div class="container">
+        <div class="main-chars-title">
+          <h2>Main Symbols</h2>
+          <div class="schools-icon">
+            <div class="circle">
+              <img src="./images/symbols/yrden.png" class="icon" alt="yrden" />
+            </div>
+          </div>
+        </div>
+
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="./images/symbols/aard.png" alt="aard" />
+              <p>aard</p>
+            </div>
+            <div class="slide">
+              <img src="./images/symbols/axii.png" alt="axii" />
+              <p>axii</p>
+            </div>
+            <div class="slide">
+              <img src="./images/symbols/igni.png" alt="igni" />
+              <p>igni</p>
+            </div>
+            <div class="slide">
+              <img src="./images/symbols/quen.png" alt="quen" />
+              <p>quen</p>
+            </div>
+            <div class="slide">
+              <img src="./images/symbols/yrden.png" alt="yrden" />
+              <p>yrden</p>
+            </div>
+            <div class="slide">
+              <img src="./images/symbols/aard.png" alt="aard" />
+              <p>aard</p>
+            </div>
+            <div class="slide">
+              <img src="./images/symbols/axii.png" alt="axii" />
+              <p>axii</p>
+            </div>
+            <div class="slide">
+              <img src="./images/symbols/igni.png" alt="igni" />
+              <p>igni</p>
+            </div>
+            <div class="slide">
+              <img src="./images/symbols/quen.png" alt="quen" />
+              <p>quen</p>
+            </div>
+            <div class="slide">
+              <img src="./images/symbols/yrden.png" alt="yrden" />
+              <p>yrden</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="inner-footer">
+          <div class="footer-half">
+            <img
+              src="./images/wild-hunt-witcher-symbol-red.png"
+              class="footer-symbol"
+              alt="wild hunt witcher symbol red"
+            />
+          </div>
+
+          <div class="footer-half">
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.netflix.com/ro/title/80189685"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-sharp fa-solid fa-film fa-beat fa-lg"
+                    style="color: #ed0713"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://ro.wikipedia.org/wiki/The_Witcher_(serial_TV)"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-wikipedia-w fa-beat fa-lg"
+                    style="color: #f40612"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.thewitcher.com/us/en/witcher3"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-solid fa-gamepad fa-beat fa-lg"
+                    style="color: #f50505"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=ndl1W4ltcmg"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-youtube fa-beat fa-lg"
+                    style="color: #f20713"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="copyright">© Copyright 2023, ORCS CAVE</p>
+      </div>
     </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
 
     <script src="./js/script.js"></script>
   </body>

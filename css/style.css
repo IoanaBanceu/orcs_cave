@@ -1,553 +1,495 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /************************ Generals ************************/
-html {
-  scroll-behavior: smooth;
-}
 
 .homepage {
-    font-family: 'Charm', cursive;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.3;
-    background-image: url('../images/pattern.jpg');
-    background-size: cover;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    z-index: 0;
+  position: relative;
+  z-index: 0;
+  background: #000;
 }
-
 
 .homepage::before {
-    background-color: #000;
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .9;
-    z-index: -1;
-  }
-
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 2em;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  color: #fff;
-}
-
-h2 {
-  font-size: 2.5em;
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.7em;
-}
-
-/************************ Links ************************/
-
-.links li {
-  list-style: none;
-}
-
-.logo a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1em;
-}
-
-.links li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.3em;
-}
-
-.links li a:hover {
-  color: lightgray;
-}
-
-.links li a.active {
-  color: red;
-}
-
-/************************ Header ************************/
-header {
-  position: fixed;
-  padding: 0 2em;
+  background-color: #000;
+  position: absolute;
+  content: "";
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 2;
-}
-
-.navbar {
   width: 100%;
-  height: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo a {
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-.navbar .links {
-  display: flex;
-  gap: 2em;
-}
-
-.navbar .toggle-btn {
-  color: #fff;
-  font-size: 1.5em;
-  cursor: pointer;
-  display: none;
-}
-
-/************************ Dropdown Menu ************************/
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  right: 2em;
-  top: 60px;
-  width: 300px;
-  height: 0;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  backdrop-filter: blur(15px);
-  overflow: hidden;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown-menu.open {
-  height: 200px;
-}
-
-.dropdown-menu li {
-  list-style: none;
-  padding: 0.7em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dropdown-menu li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1em;
+  height: 100%;
+  opacity: 0.9;
+  z-index: -1;
 }
 
 /************************ Banner ************************/
 .banner {
-  position: relative;
-  background-image: url("../images/geralt-banner.jpg");
-  background-size: cover;
+  background: url("../images/main-banners/hero-landscape.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
   width: 100%;
   height: 100%;
-  background-position: top center;
+  position: relative;
+  padding: 60px 0;
 }
 
-.banner::after {
-  background-color: #000;
+.banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 80vh;
+}
+
+.banner-left,
+.banner-right {
+  width: 50%;
+}
+
+.banner-left .subtitle {
+  display: flex;
+  color: #fff;
+  font-size: 5em;
+  line-height: 0.8;
+}
+
+.banner-left .symbol {
+  width: 50px;
+  margin: 0 0.25em;
+  position: relative;
+  bottom: 15px;
+}
+
+.banner-left .title {
+  color: #fff;
+  font-size: 8em;
+  line-height: 1;
+}
+
+/************************ Schools ************************/
+
+.schools {
+  padding: 4em 0;
+  position: relative;
+}
+
+.schools-title {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.schools-icon {
+  color: #fff;
+  font-size: 1.3em;
+  position: relative;
+  padding: 3em 0;
+}
+
+.schools-icon::before {
+  width: 2px;
+  height: 35px;
+  background: #ff0000;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.schools-icon::after {
+  width: 2px;
+  height: 35px;
+  background: #ff0000;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.schools-icon .circle {
+  width: 35px;
+  height: 35px;
+  background: #ff0000;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  box-shadow: 0px 0px 1px 1px rgba(244, 244, 244, 0.8);
+  animation: pulse-animation 2s infinite;
+}
+
+.schools-icon img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.school-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.school-card {
+  width: calc(50% - 1em);
+  display: flex;
+  align-items: center;
+  background: rgba(136, 150, 148, 0.18);
+  border-radius: 35px;
+}
+
+.school-card img {
+  width: 75px;
+  z-index: 1;
+}
+
+.school-card h3 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.school-card h3 span {
+  color: #ff0000;
+}
+
+.school-card p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.school-card p:last-child {
+  margin-bottom: 0;
+}
+
+.school-symbol {
+  height: 100%;
+  background: rgba(136, 150, 148, 0.1);
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
+.school-details {
+  padding: 2em;
+}
+
+/************************ Main Characters ************************/
+.main-chars {
+  padding: 4em 0;
+  background-image: url("../images/main-banners/the-witcher-3-wild-hunt-landscape-nature-river-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.main-chars::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
   opacity: 0.7;
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
 }
 
-.inner-banner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1;
-  gap: 2em;
+/* .main-chars  */
 
-  min-height: 100vh;
-}
-
-.inner-banner .title {
-  display: flex;
-  justify-content: center;
+.main-chars-title {
   text-align: center;
-  flex-direction: column;
-  font-size: 4.5em;
-  font-weight: 700;
-  color: #fff;
-  line-height: 0.8;
-}
-
-.inner-banner .title span {
-  font-size: 0.6em;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  margin: 0 auto;
-}
-
-.inner-banner .title img {
-  width: 70px;
+  margin-bottom: 4em;
+  z-index: 3;
   position: relative;
-  left: 6px;
 }
 
-.separation {
+.main-chars h1 {
+  font-size: 1.8em;
+}
+
+.main-chars p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.main-chars p span {
+  font-size: 1.5em;
+}
+
+.main-chars p span:first-of-type {
+  margin-right: 0.5em;
+}
+
+.main-chars p span:last-of-type {
+  margin-left: 0.5em;
+}
+
+.main-chars a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.main-chars .inner-chars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.main-chars img {
+  transform: scale(0.9);
+}
+
+.main-chars .flip-card {
+  background-color: transparent;
+  /* width: calc(25%  - 1em); */
+  width: calc(20% - 1em);
+  height: 40em;
+  perspective: 1000px;
+  z-index: 3;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flip-card-front {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.flip-card-back {
+  background-color: #523d35;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 2em;
+  gap: 2em;
+}
+
+.flip-card:nth-child(2) .flip-card-back {
+  background-color: #202020;
+}
+
+.flip-card:nth-child(3) .flip-card-back {
+  background-color: #10202f;
+}
+
+.flip-card:nth-child(4) .flip-card-back {
+  background-color: #593647;
+}
+
+/************************ Symbols ************************/
+.symbols {
+  padding: 4em 0;
+}
+
+.slider {
+  background: transparent;
+  height: 18vh;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, #000 0%, #000 50%, transparent 100%);
   content: "";
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 100%;
+  position: absolute;
+  width: 200px;
   z-index: 2;
 }
 
-.separation img {
-  width: 50px;
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(200px * 14);
+}
+
+.slider .slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slider img {
   filter: brightness(0) invert(1);
-  transform: scale(1);
-
-  animation: pulse 2s infinite;
+  width: 120px;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(0.5);
-  }
-
-  70% {
-    transform: scale(1.5);
-  }
-
-  100% {
-    transform: scale(0.5);
-  }
-}
-
-/************************ Schools ************************/
-.schools {
-  padding: 6em 0;
-}
-
-.schools .separation {
-  bottom: 0;
-}
-
-.schools .title {
-  position: relative;
-  margin-bottom: 4em;
-}
-
-.inner-schools {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
-  gap: 3em;
-}
-
-.inner-schools img {
-  width: 75px;
-}
-
-.single-school {
-  width: calc(50% - 1.5em);
-  background: rgba(136, 150, 148, 0.181);
-  padding: 2em;
-}
-
-.single-school p {
-  font-size: 1.4em;
-  line-height: 1.5;
-  margin-bottom: 0.5em;
-}
-
-.school-desc {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-  margin-bottom: 2em;
-}
-
-.school-desc h3 span {
-  color: #ff0000;
-  letter-spacing: 1px;
-  font-size: 1.7em;
-}
-
-.schools .separation {
-  bottom: 0;
-}
-
-/************************ Main Characters ************************/
-.main-characters {
-  padding: 6em 0;
-}
-
-.main-characters .separation {
-  bottom: 0;
-}
-
-.main-characters .title {
-  margin-bottom: 6em;
-}
-
-.inner-characters {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
-  gap: 2em;
-  position: relative;
-}
-
-.character-box {
-  text-decoration: none;
-  width: calc(25% - 2em);
-  transition: all 0.5s ease-in;
-}
-
-.character-box:hover h3 {
-  color: #ff0000;
-}
-
-.character-box .picture {
-  background: rgba(136, 150, 148, 0.181);
-  padding: 2em;
-  border-radius: 10px;
-  transition: all 0.5s ease;
-}
-
-.character-box:hover .picture {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.characters-text {
-  margin-bottom: 2em;
-}
-
-/************************ Footer ************************/
-footer {
-  background: #000;
-  padding: 6em 0;
-}
-
-.inner-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-}
-
-.footer-links {
-  display: flex;
-  gap: 2em;
-}
-
-.footer-links li a {
-  color: #fff;
-  text-decoration: none;
+.slide p {
+  text-align: center;
   font-size: 1.5em;
-  transition: all 0.5s ease-in;
-}
-
-.footer-links li a:hover {
+  text-transform: uppercase;
   color: #ff0000;
 }
 
-#geralt,
-#yennefer,
-#ciri {
-  height: 100vh;
+/************************ Animations ************************/
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(244, 244, 244, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(244, 244, 244, 0);
+  }
 }
 
-#geralt {
-  background: red;
-}
-
-#yennefer {
-  background: yellow;
-}
-
-#ciri {
-  background: blue;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 /************************ Media Query ************************/
 @media screen and (max-width: 992px) {
-  .navbar .links {
-    display: none;
+  .main-chars .flip-card {
+    width: calc(32% - 0.5em);
   }
 
-  .navbar .toggle-btn {
-    display: block;
+  .school-card {
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 
-  .dropdown-menu {
-    display: block;
+  .school-symbol {
+    height: 90px;
+    width: 100%;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 0;
+  }
+
+  .main-chars .inner-chars {
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .single-school {
+  h2 {
+    font-size: 3em;
+  }
+
+  .banner {
+    padding: 100px 0 40px;
+  }
+  .banner-left,
+  .banner-right {
     width: 100%;
+  }
+
+  .banner-inner {
+    gap: 2em;
+  }
+
+  .banner-inner {
+    text-align: center;
+  }
+
+  .banner-left .subtitle {
+    justify-content: center;
+  }
+
+  .main-chars .flip-card {
+    width: calc(50% - 0.5em);
+  }
+
+  .school-card h3 {
+    font-size: 1.5em;
+  }
+
+  .school-symbol {
+    padding: 2em;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .dropdown-menu {
-    left: 2em;
-    width: unset;
+  .banner {
+    padding: 80px 0 40px;
   }
-}
 
-/* -----------------------Andrei css ------------------------------ */
-
-.main-title {
-  line-height: 180px;
-  text-align: center;
-  text-shadow: #000;
-}
-
-body {
-  background-image: url("/images/characters/characters_wallpaper.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* background-color: #000; */
-  /* position: fixed; */
-  /* content: ""; */
-  /* width: 100%; */
-  /* height: 100%; */
-}
-
-.description-title {
-  text-align: center;
-  padding: 10px;
-  border: 1px solid green;
-  margin: 1%;
-}
-
-div.gallery {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin: 5px;
-}
-
-div {
-  /* width: 100px; */
-  /* height: 100px; */
-  transition: width 2s, height 4s;
-}
-
-.gallery {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease;
-  position: relative;
-  /* backface-visibility: hidden; */
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-  /* width: 300px; */
-  /* height: 300px; */
-  opacity: 0.75;
-}
-
-div.gallery img {
-  width: 100%;
-  height: 25em;
-  padding: 5px;
-}
-
-div.title-img {
-  padding: 15px;
-  text-align: center;
-  color: aliceblue;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: large;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.characters-img {
-  padding: 0 6px;
-  float: left;
-  width: 20%;
-  position: relative;
-  /* width: 50%; */
-}
-
-@media only screen and (max-width: 700px) {
-  .characters-img {
-    width: 49.99999%;
-    margin: 6px 0;
+  .banner-left .title {
+    font-size: 4em;
   }
-}
 
-@media only screen and (max-width: 500px) {
-  .characters-img {
+  .banner-left .subtitle {
+    font-size: 4em;
+  }
+
+  .main-chars h1 {
+    font-size: 1.5em;
+  }
+
+  .main-chars .flip-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .school-card {
     width: 100%;
   }
-}
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  .symbols {
+    padding: 4em 0 0;
+  }
 
-.middle {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
+  .slider {
+    height: 21vh;
+  }
 
-.container:hover .description {
-  opacity: 1;
-}
+  .slider::before,
+  .slider::after {
+    width: 100px;
+  }
 
-.description {
-  background-color: #04aa6d;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  .slider img {
+    width: 120px;
+  }
 }

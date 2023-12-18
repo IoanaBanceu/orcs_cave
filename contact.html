@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Orcs Cave | Contact</title>
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,35 +23,213 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
   </head>
-
-  <body>
+  <body class="contact-page">
+    <!-- 1. Menu  -->
     <header>
-      <div class="navbar">
-        <div class="logo"><a href="index.html">ORCS CAVE</a></div>
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="characters.html">Characters</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#" class="active">Contact</a></li>
-        </ul>
-        <div class="toggle-btn" onclick="openMenu()">
-          <i class="fa-solid fa-bars"></i>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo"><a href="index.html">ORCS CAVE</a></div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" class="active">Contact</a></li>
+          </ul>
+          <div class="toggle-btn" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="dropdown-menu">
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" class="active">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact us  -->
+    <div class="contact-header">
+      <div class="container">
+        <div class="contact-title">
+          <h1 class="text-center">Contact Us</h1>
+          <p>Please fill out this form with the required information</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-body">
+      <div class="container">
+        <form action="#" id="contact-us">
+          <div class="form-group">
+            <label id="name-label" for="name">Name/Nickname:</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email:</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age (optional):</label>
+            <input
+              id="number"
+              name="age"
+              type="number"
+              min="10"
+              max="100"
+              placeholder="Your age"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <label for="dropdown">Please choose your reason:</label>
+            <select id="dropdown" name="reason" class="form-control" required>
+              <option disabled selected value>Select current reason</option>
+              <option value="log-ing">Can't log in</option>
+              <option value="job">Game crash</option>
+              <option value="learner">Can't change resolution</option>
+              <option value="preferNo">Suggestion</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>How do you want to receive the answer?</p>
+            <label for="email-checkbox">
+              <input
+                name="answer-receive"
+                id="email-checkbox"
+                value="e-mail"
+                type="radio"
+                class="input-radio"
+                checked
+              />E-mail
+            </label>
+            <label for="phone-checkbox">
+              <input
+                name="answer-receive"
+                id="phone-checkbox"
+                value="phone-call"
+                type="radio"
+                class="input-radio"
+              />Phone call
+            </label>
+            <label for="sms-checkbox">
+              <input
+                name="answer-receive"
+                id="sms-checkbox"
+                value="sms"
+                type="radio"
+                class="input-radio"
+              />SMS
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="comment">Please describe your problem:</label>
+            <textarea
+              class="input-textarea"
+              name="comment"
+              id="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- 3. Footer  -->
+    <footer>
+      <div class="container">
+        <div class="inner-footer">
+          <div class="footer-half">
+            <img
+              src="./images/wild-hunt-witcher-symbol-red.png"
+              class="footer-symbol"
+              alt="wild hunt witcher symbol red"
+            />
+          </div>
+
+          <div class="footer-half">
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.netflix.com/ro/title/80189685"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-sharp fa-solid fa-film fa-beat fa-lg"
+                    style="color: #ed0713"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://ro.wikipedia.org/wiki/The_Witcher_(serial_TV)"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-wikipedia-w fa-beat fa-lg"
+                    style="color: #f40612"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.thewitcher.com/us/en/witcher3"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-solid fa-gamepad fa-beat fa-lg"
+                    style="color: #f50505"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=ndl1W4ltcmg"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-youtube fa-beat fa-lg"
+                    style="color: #f20713"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="dropdown-menu">
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="characters.html">Characters</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#" class="active">Contact</a></li>
-        </ul>
-      </div>
-    </header>
-    <h1>Contact Page</h1>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <p class="copyright">© Copyright 2023, ORCS CAVE</p>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
     <script src="./js/script.js"></script>
   </body>
 </html>

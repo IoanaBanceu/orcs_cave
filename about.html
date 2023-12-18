@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orcs Cave | About</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,35 +23,277 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/about.css" />
   </head>
-
-  <body>
+  <body class="about-page">
+    <!-- 1. Menu  -->
     <header>
-      <div class="navbar">
-        <div class="logo"><a href="index.html">ORCS CAVE</a></div>
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="characters.html">Characters</a></li>
-          <li><a href="#" class="active">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="toggle-btn" onclick="openMenu()">
-          <i class="fa-solid fa-bars"></i>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo"><a href="index.html">ORCS CAVE</a></div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="toggle-btn" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="dropdown-menu">
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. About banner -->
+    <div class="about-banner-header">
+      <div class="container">
+        <div class="about-title">
+          <h2>About Orcs Cave Team</h2>
+          <div class="about-icon">
+            <div class="circle">
+              <img src="./images/symbols/aard.png" class="icon" alt="aard" />
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="dropdown-menu">
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="characters.html">Characters</a></li>
-          <li><a href="#" class="active">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="bottom-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
       </div>
-    </header>
-    <h1>About us Page</h1>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </div>
+
+    <!-- 3. Users -->
+
+    <div class="users">
+      <div class="container">
+        <div class="inner-users">
+          <!-- Card 1  -->
+          <div class="user-card">
+            <div class="user-area">
+              <div class="user-wrapper">
+                <img
+                  src="./images/avatars/iuliaavatar.jpg"
+                  alt="iulia avatar"
+                />
+                <h3>Iulia Banceu - Home Page</h3>
+                <ul>
+                  <li>
+                    <a href="https://github.com/IoanaBanceu"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2  -->
+          <div class="user-card">
+            <div class="user-area">
+              <div class="user-wrapper">
+                <img
+                  src="./images/avatars/andreiavatar.jpg"
+                  alt="andrei avatar"
+                />
+                <h3>Andrei Antoci - Characters Page</h3>
+                <ul>
+                  <li>
+                    <a href="https://github.com/antociandrei" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com" target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com" target="_blank"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3  -->
+          <div class="user-card">
+            <div class="user-area">
+              <div class="user-wrapper">
+                <img
+                  src="./images/avatars/ioanaavatar.jpg"
+                  alt="ioana avatar"
+                />
+                <h3>Ioana Ciceu - About Page</h3>
+                <ul>
+                  <li>
+                    <a href="https://github.com/Ioana0707" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com" target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com" target="_blank"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="user-card">
+            <div class="user-area">
+              <div class="user-wrapper">
+                <img
+                  src="./images/avatars/razvanavatar.jpg"
+                  alt="razvan avatar"
+                />
+                <h3>Razvan David - Contact Page</h3>
+                <ul>
+                  <li>
+                    <a href="https://github.com/Razvan92" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com" target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com" target="_blank"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Footer  -->
+    <footer>
+      <div class="container">
+        <div class="inner-footer">
+          <div class="footer-half">
+            <img
+              src="./images/wild-hunt-witcher-symbol-red.png"
+              class="footer-symbol"
+              alt="wild hunt witcher symbol red"
+            />
+          </div>
+
+          <div class="footer-half">
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.netflix.com/ro/title/80189685"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-sharp fa-solid fa-film fa-beat fa-lg"
+                    style="color: #ed0713"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://ro.wikipedia.org/wiki/The_Witcher_(serial_TV)"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-wikipedia-w fa-beat fa-lg"
+                    style="color: #f40612"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.thewitcher.com/us/en/witcher3"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-solid fa-gamepad fa-beat fa-lg"
+                    style="color: #f50505"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=ndl1W4ltcmg"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-youtube fa-beat fa-lg"
+                    style="color: #f20713"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">© Copyright 2023, ORCS CAVE</p>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
     <script src="./js/script.js"></script>
   </body>
 </html>

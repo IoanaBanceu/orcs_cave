@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Orcs Cave | Characters</title>
+    <title>ORCS CAVE - Characters</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,122 +23,499 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/characters.css" />
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="characters-body">
+  <body class="characters-page">
+    <!-- 1. Menu  -->
     <header>
-      <div class="navbar">
-        <div class="logo"><a href="index.html">ORCS CAVE</a></div>
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#" class="active">Characters</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="toggle-btn" onclick="openMenu()">
-          <i class="fa-solid fa-bars"></i>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo"><a href="index.html">ORCS CAVE</a></div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Characters</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="toggle-btn" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
-      </div>
 
-      <div class="dropdown-menu">
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#" class="active">Characters</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="dropdown-menu">
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Characters</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
-<<<<<<< HEAD
-    <main>
+    <!-- 2. Banner Characters -->
+    <div class="characters-banner">
       <div class="container">
-        <div id="geralt"></div>
-        <div id="yennefer"></div>
-        <div id="ciri"></div>
-      </div>
-    </main>
+        <div class="characters-title">
+          <h2>Characters</h2>
+        </div>
 
-    <h1>Characters Page</h1>
-=======
-    <div class="main-title">
-      <h1>Characters Page</h1>
+        <div class="characters-banner-cards">
+          <!-- Card 1 -->
+          <a href="#geralt" class="character-box">
+            <div class="characters-text">
+              <h3>Geralt</h3>
+            </div>
+            <div class="picture">
+              <img
+                src="./images/characters/geralt-characters-banner.jpg"
+                alt="geralt banner"
+              />
+            </div>
+          </a>
+          <!-- Card 2 -->
+          <a href="#yennefer" class="character-box">
+            <div class="characters-text">
+              <h3>Yennefer</h3>
+            </div>
+            <div class="picture">
+              <img
+                src="./images/characters/yenn-characters-banner.jpg"
+                alt="yenn banner"
+              />
+            </div>
+          </a>
+          <!-- Card 3 -->
+          <a href="#ciri" class="character-box">
+            <div class="characters-text">
+              <h3>Ciri</h3>
+            </div>
+            <div class="picture">
+              <img
+                src="./images/characters/ciri-characters-banner.jpg"
+                alt="ciri banner"
+              />
+            </div>
+          </a>
+          <!-- Card 4 -->
+          <a href="#emhyr" class="character-box">
+            <div class="characters-text">
+              <h3>Emhyr</h3>
+            </div>
+            <div class="picture">
+              <img
+                src="./images/characters/emhyr-characters-banner.jpg"
+                alt="emhyr banner"
+              />
+            </div>
+          </a>
+          <!-- Card 5 -->
+          <a href="#dandelion" class="character-box">
+            <div class="characters-text">
+              <h3>Dandelion</h3>
+            </div>
+            <div class="picture">
+              <img
+                src="./images/characters/dandelion-characters-banner.jpg"
+                alt="dandelion banner"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="bottom-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
     </div>
 
-    <h1 class="description-title">
-      Below you have the main characters from The Witcher :
-    </h1>
+    <!-- 3. Geralt Section -->
+    <div class="character-geralt" id="geralt">
+      <div class="container">
+        <div class="geralt-inner">
+          <div class="geralt-box-left">
+            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="content"></div>
+            </div>
+            <img src="./images/characters/geralt.jpg" alt="geralt" />
+          </div>
+          <div class="geralt-box-right">
+            <h3>Geralt of Rivia</h3>
+            <p>
+              Geralt of Rivia was a legendary witcher of the School of the Wolf
+              active throughout the 13th century. He loved the sorceress
+              Yennefer, considered the love of his life despite their tumultuous
+              relationship, and became Ciri's adoptive father.
+            </p>
+            <p>
+              During the Trial of the Grasses, Geralt exhibited unusual
+              tolerance for the mutagens that grant witchers their abilities.
+              Accordingly, Geralt was subjected to further experimental mutagens
+              which rendered his hair white and may have given him greater
+              speed, strength, and stamina than his fellow witchers.
+            </p>
 
-    <!-- GERALT -->
-
-    <div class="characters-img">
-      <div class="gallery">
-        <!-- <a target="_blank" href="img_5terre.jpg"> -->
-        <img src="/images/characters/geralt.png" alt="Geralt" />
-        <!-- </a> -->
-        <div class="title-img">Geralt</div>
-        <div class="middle">
-          <div class="description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
-            reiciendis rerum hic voluptatem ducimus corrupti atque similique,
-            tenetur fugiat neque in placeat, adipisci impedit modi sint
-            temporibus harum laboriosam architecto magni quidem alias excepturi
-            inventore accusantium dicta. Modi similique, beatae amet culpa
-            sapiente facilis veniam ipsum maxime corporis, ad tempora.
+            <table class="characters-alias-table">
+              <tbody>
+                <tr>
+                  <th>Alias(es):</th>
+                  <td>White Wolf</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>White One</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Butcher of Blaviken</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Yennefer -->
+    <!-- 4. Yennefer Section -->
+    <div class="character-yenn" id="yennefer">
+      <div class="top-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,320L48,314.7C96,309,192,299,288,256C384,213,480,139,576,112C672,85,768,107,864,96C960,85,1056,43,1152,64C1248,85,1344,171,1392,213.3L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="yennefer-inner">
+          <div class="yennefer-box-left">
+            <h3>Yennefer of VENGERBERG</h3>
+            <p>
+              Yennefer of Vengerberg, born on Belleteyn in 1173, was a sorceress
+              who lived in Vengerberg, the capital city of Aedirn. She was
+              Geralt of Rivia's true love and a mother figure to Ciri, whom she
+              viewed like a daughter to the point that she did everything she
+              could to rescue the girl and keep her from harm.
+            </p>
+            <p>
+              She helped advise King Demavend of Aedirn (though was never a
+              formal royal advisor), a close friend of Triss Merigold, and the
+              youngest member of the Council of Wizards within the Brotherhood
+              of Sorcerers. After its fall, the Lodge of Sorceresses attempted
+              to recruit her, but they didn't see eye to eye as the Lodge wanted
+              to advance their own political agenda by using Ciri.
+            </p>
 
-    <div class="characters-img">
-      <div class="gallery">
-        <!-- <a target="_blank" href="img_forest.jpg"> -->
-        <img src="/images/characters/yennefer.png" alt="Yennefer" />
-        <!-- </a> -->
-        <div class="title-img">Yennefer</div>
+            <table class="characters-alias-table">
+              <tbody>
+                <tr>
+                  <th>Alias(es):</th>
+                  <td>Yen</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Yenna</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Horsewoman of War</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="yennefer-box-right">
+            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="content"></div>
+            </div>
+            <img src="./images/characters/yenn.jpg" alt="yenn" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
       </div>
     </div>
 
-    <!-- CIRI -->
+    <!-- 5. Ciri Section -->
+    <div class="character-ciri" id="ciri">
+      <div class="container">
+        <div class="ciri-inner">
+          <div class="ciri-box-left">
+            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="content"></div>
+            </div>
+            <img src="./images/characters/ciri.jpg" alt="ciri" />
+          </div>
 
-    <div class="characters-img">
-      <div class="gallery">
-        <!-- <a target="_blank" href="img_lights.jpg"> -->
-        <img src="/images/characters/ciri.png" alt="Ciri" />
-        <!-- </a> -->
-        <div class="title-img">Ciri</div>
+          <div class="ciri-box-right">
+            <h3>Cirilla Fiona Elen Riannon</h3>
+            <p>
+              Cirilla Fiona Elen Riannon (better known as Ciri), was born in
+              1252 or 1253, and most likely during the Belleteyn holiday. She
+              was the sole princess of Cintra, the daughter of Pavetta and Emhyr
+              var Emreis (who was using the alias "Duny" at the time) as well as
+              Queen Calanthe's granddaughter.
+            </p>
+            <p>
+              After Geralt of Rivia helped lift Duny's curse, Duny asked what
+              reward the witcher would like and Geralt invoked the Law of
+              Surprise, as it turned out Pavetta was pregnant with Ciri,
+              unbeknownst to Duny.
+            </p>
+
+            <table class="characters-alias-table">
+              <tbody>
+                <tr>
+                  <th>Alias(es):</th>
+                  <td>Ciri</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Lion Cub of Cintra</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Ugly one</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Falka</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- EMHYR -->
+    <!-- 6. Emyhr Section -->
+    <div class="character-emyhr" id="emhyr">
+      <div class="top-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,320L48,314.7C96,309,192,299,288,256C384,213,480,139,576,112C672,85,768,107,864,96C960,85,1056,43,1152,64C1248,85,1344,171,1392,213.3L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="emyhr-inner">
+          <div class="emyhr-box-left">
+            <h3>Emhyr var Emreis</h3>
+            <p>
+              Emhyr var Emreis, Deithwen Addan yn Carn aep Morvudd (Nilfgaardian
+              language: The White Flame Dancing on the Barrows of his Enemies),
+              also known to a few under his alias as Duny, the Urcheon of
+              Erlenwald (Polish: Jeż z Erlenwaldu) was Emperor of the
+              Nilfgaardian Empire, Lord of Metinna, Ebbing, Gemmera, and
+              Sovereign of Nazair and Vicovaro from 1257 until his death
+              sometime in the late 13th century. He also became the King of
+              Cintra after marrying a false Cirilla in 1268.
+            </p>
+            <p>
+              His rule of Nilfgaard was highly aggressive, often pursuing
+              expansionist policies similar to those of his predecessors. This
+              led to the outbreak of two wars against the Northern Kingdoms,
+              both of which he lost. Emhyr var Emreis was an intelligent and
+              brilliant ruler. He chose his people well and crushed many plots
+              against him. He was ruthless toward traitors and moved towards his
+              goals with great determination.
+            </p>
 
-    <div class="characters-img">
-      <div class="gallery">
-        <!-- <a target="_blank" href="img_mountains.jpg"> -->
-        <img src="/images/characters/emhyr.png" alt="Emhyr" />
-        <!-- </a> -->
-        <div class="title-img">Emhyr</div>
+            <table class="characters-alias-table">
+              <tbody>
+                <tr>
+                  <th>Alias(es):</th>
+                  <td>Duny</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Urcheon of Erlerwald</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="emyhr-box-right">
+            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="content"></div>
+            </div>
+            <img src="./images/characters/emyhr.jpg" alt="emyhr" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
       </div>
     </div>
 
-    <!-- JASKIER -->
+    <!-- 7. Dandelion Section -->
+    <div class="character-dandelion" id="dandelion">
+      <div class="container">
+        <div class="dandelion-inner">
+          <div class="dandelion-box-left">
+            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="content"></div>
+            </div>
+            <img src="./images/characters/dandelion.jpg" alt="dandelion" />
+          </div>
 
-    <div class="characters-img">
-      <div class="gallery">
-        <!-- <a target="_blank" href="img_mountains.jpg"> -->
-        <img src="/images/characters/jaskier.png" alt="Jaskier" />
-        <!-- </a> -->
-        <div class="title-img">Jaskier</div>
+          <div class="dandelion-box-right">
+            <h3>Dandelion (Jaskier)</h3>
+            <p>
+              Julian Alfred Pankratz, Viscount de Lettenhove, better known as
+              Dandelion (Polish: Jaskier), was a poet, minstrel, bard, and close
+              friend of Geralt of Rivia.
+            </p>
+            <p>
+              During his travels with Geralt, Dandelion started to write his
+              memoirs, entitled "Half a Century of Poetry"; twice, in fact. His
+              first attempt was lost in the bottom of the duchess of Toussaint's
+              closet after the poet was banished from her duchy. But rather than
+              bemoaning that loss, the poet decided to rewrite his memoirs from
+              scratch. His poems were later bound in two collections: The
+              Adversities of Loving and Time of the Moon. The following are the
+              named ones: Elaine Ettariel Elusive The Stars above the Path
+              Winter (or The Eternal Fire).
+            </p>
+
+            <table class="characters-alias-table">
+              <tbody>
+                <tr>
+                  <th>Alias(es):</th>
+                  <td>Duny</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Urcheon of Erlerwald</td>
+                </tr>
+                <!-- <tr>
+                  <th></th>
+                  <td>Horsewoman of War</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="clearfix"></div>
->>>>>>> andrei
+    <!-- 3. Footer  -->
+    <footer>
+      <div class="container">
+        <div class="inner-footer">
+          <!-- <div class="footer-half">
+            <div class="logo"><a href="index.html">ORCS CAVE</a></div>
+          </div> -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <div class="footer-half">
+            <img
+              src="./images/wild-hunt-witcher-symbol-red.png"
+              class="footer-symbol"
+              alt="wild hunt witcher symbol red"
+            />
+          </div>
+
+          <div class="footer-half">
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.netflix.com/ro/title/80189685"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-sharp fa-solid fa-film fa-beat fa-lg"
+                    style="color: #ed0713"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://ro.wikipedia.org/wiki/The_Witcher_(serial_TV)"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-wikipedia-w fa-beat fa-lg"
+                    style="color: #f40612"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.thewitcher.com/us/en/witcher3"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-solid fa-gamepad fa-beat fa-lg"
+                    style="color: #f50505"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=ndl1W4ltcmg"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-youtube fa-beat fa-lg"
+                    style="color: #f20713"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">© Copyright 2023, ORCS CAVE</p>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
